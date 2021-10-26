@@ -14,3 +14,26 @@ Consigli del giorno:
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo “a mano”
  */
 
+const numbers = [1, 2, 3, 4, 5, 6];
+console.log(numbers)
+
+const generate = document.querySelector('.btn-generate')
+console.log(generate)
+
+const randomNum1 = numbers[Math.floor(numbers.length * Math.random())];
+alert(`Il tuo numero è ${randomNum1}`)
+console.log(randomNum1)
+
+
+const randomNum2 = numbers[Math.floor(numbers.length * Math.random())];
+alert(`Il numero del Computer è ${randomNum2}`)
+console.log(randomNum2)
+
+if (randomNum1 === randomNum2) {
+    alert('I numeri sono uguali. Nessun vincitore scelto.')
+} else if (randomNum1 > randomNum2) {
+    alert(`Il numero ${randomNum1} è maggiore di ${randomNum2}. Hai vinto!`)
+} else if (randomNum1 < randomNum2) {
+    alert(`Il numero ${randomNum1} è minore di ${randomNum2}. Hai perso!`)
+}
+
