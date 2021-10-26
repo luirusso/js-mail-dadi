@@ -17,9 +17,6 @@ Consigli del giorno:
 const numbers = [1, 2, 3, 4, 5, 6];
 console.log(numbers)
 
-const generate = document.querySelector('.btn-generate')
-console.log(generate)
-
 const randomNum1 = numbers[Math.floor(numbers.length * Math.random())];
 alert(`Il tuo numero è ${randomNum1}`)
 console.log(randomNum1)
