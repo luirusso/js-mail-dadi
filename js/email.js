@@ -32,7 +32,7 @@ const getEmail = prompt('Inserire email registrata');
 console.log(getEmail)
 
 // Check if user email is registered
-if(getEmail === '') {
+if(getEmail === '' || getEmail === null) {
     alert('Inserire una mail registrata');
     console.log(getEmail)
 } else {
