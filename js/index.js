@@ -21,3 +21,23 @@ Consigli del giorno:
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo “a mano”
  */
 
+const mailList = ['tizio@gmail.com', 'caio@hotmail.it', 'sempronio@libero.it'];
+console.log(mailList);
+
+const getEmail = prompt('Inserire email registrata');
+console.log(getEmail)
+
+
+if(getEmail === '') {
+    alert('Inserire una mail registrata');
+} else {
+    let emailFound = false;
+
+    for(let i = 0; i < mailList.length; i++) {
+        if(mailList[i] === getEmail) {
+            emailFound = true;
+            break;
+        }
+    }
+}
+console.log(emailFound);
