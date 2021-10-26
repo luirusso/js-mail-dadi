@@ -21,23 +21,31 @@ Consigli del giorno:
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo “a mano”
  */
 
+// EMAIL EXERCISE
+
+// Registered accounts
 const mailList = ['tizio@gmail.com', 'caio@hotmail.it', 'sempronio@libero.it'];
 console.log(mailList);
 
+// Get user email
 const getEmail = prompt('Inserire email registrata');
 console.log(getEmail)
 
-
+// Check if user email is registered
 if(getEmail === '') {
     alert('Inserire una mail registrata');
+    console.log(getEmail)
 } else {
-    let emailFound = false;
+    let emailFound = false; //flag
 
     for(let i = 0; i < mailList.length; i++) {
         if(mailList[i] === getEmail) {
             emailFound = true;
+            console.log('email registrata, accesso effettuato con successo')
+            alert('Accesso effettuato con successo!')
             break;
         }
     }
+    console.log(emailFound);
 }
-console.log(emailFound);
+
