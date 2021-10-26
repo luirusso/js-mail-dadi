@@ -32,6 +32,7 @@ if(getEmail === '') {
     alert('Inserire una mail registrata');
 } else {
     let emailFound = false;
+    console.log('email non registrata')
 
     for(let i = 0; i < mailList.length; i++) {
         if(mailList[i] === getEmail) {
@@ -39,5 +40,5 @@ if(getEmail === '') {
             break;
         }
     }
+    console.log(emailFound);
 }
-console.log(emailFound);
