@@ -28,15 +28,16 @@ const mailList = ['tizio@gmail.com', 'caio@hotmail.it', 'sempronio@libero.it'];
 console.log(mailList);
 
 // Get user email
-const getEmail = prompt('Inserire email registrata');
+const getEmail = prompt('Inserire email registrata').trim().toLowerCase();
 console.log(getEmail)
+
+let emailFound = false; //flag
 
 // Check if user email is registered
 if(getEmail === '' || getEmail === null) {
     alert('Inserire una mail registrata');
     console.log(getEmail)
 } else {
-    let emailFound = false; //flag
 
     for(let i = 0; i < mailList.length; i++) {
         if(mailList[i] === getEmail) {
@@ -48,4 +49,3 @@ if(getEmail === '' || getEmail === null) {
     }
     console.log(emailFound);
 }
-
